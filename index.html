@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="rps.js" async></script>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
     <title>Rock Paper Scissor Master</title>
 </head>
-<body>
-    
+
+<body class="toggle"><!--  -->
+
+    <header>
+        <div class="logo"><img src="img/logo.png"></div>
+        <div class="profile-mode">
+
+
+
+            <div class="switch checkbox-wrapper-41">
+                <input id="switch" type="checkbox">
+              </div>
+        </div>
+
+    </header>
+
+    <main class="toggle">
+        <div class="introduction toggle">
+            <h1>Ultimate Rock Paper Scissor Championship</h1>
+            <p>Here you will be tested againts our best of the best computer to prove how much luck you have running in
+                your blood. If you win, you will be crowned as the Ultimate RPS Champion.</p>
+        </div>
+        <div class="rules">
+            <h2>Rules of the Game</h2>
+
+            <p><strong>How to Play:</strong> The game follows the traditional rules of Rock, Paper, Scissors - Rock
+                crushes Scissors,
+                Scissors cut Paper, and Paper wraps Rock.</p>
+
+            <p><strong>Number of Rounds:</strong> The game consists of a maximum of five rounds.</p>
+
+            <p><strong>Winning a Round:</strong> A round is won by the player whose selection beats the other player's
+                selection,
+                according to the traditional rules of Rock, Paper, Scissors.</p>
+
+            <p><strong>Tied Rounds:</strong> In the case of a tie (both players select the same thing), the round will
+                be replayed until
+                a decisive outcome is achieved.</p>
+
+            <p><strong>Winning the Game:</strong> The first player to win three rounds out of five is declared the
+                "Ultimate RPS
+                Champion.</p>
+
+        </div>
+        <div class="game toggle">
+            <div class="card toggle"><img class="img-toggle" src="img/rock.png"></div>
+            <div class="card toggle"><img class="img-toggle" src="img/paper.png"></div>
+            <div class="card toggle"><img  class="img-toggle" src="img/scissor.png"></div>
+        </div>
+        <div class="record toggle">
+            <h2>Current Session History</h2>
+            <div class="history">
+                <div class="card toggle"></div>
+                <div class="card toggle"></div>
+                <div class="card toggle"></div>
+                <div class="card toggle"></div>
+                <div class="card toggle"></div>
+            </div>
+        </div>
+        <div class="score"></div>
+        <div><button class="button-28 toggle">Reset the game</button></div>
+    </main>
+    <footer>crated by: Ahmed N. Khan</footer>
+
 </body>
+
+
 </html>
