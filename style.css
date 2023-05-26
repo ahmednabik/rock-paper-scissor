@@ -136,20 +136,19 @@ main {
     appearance: none;
     background-color: transparent;
     border: 1px solid;
-    border-radius: 15px;
+    border-radius: 10px;
     box-sizing: border-box;
-    
     cursor: pointer;
     display: inline-block;
     font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     line-height: normal;
     margin: 0;
-    min-height: 60px;
+    min-height: 40px;
     min-width: 0;
     outline: none;
-    padding: 16px 24px;
+    padding: 12px 10px;
     text-align: center;
     text-decoration: none;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -189,25 +188,25 @@ main {
 
 /* Toggle button Starts*/
 
-  .checkbox-wrapper-41 {
+.checkbox-wrapper-41 {
     --size: 60px;
-  }
+}
 
-  .checkbox-wrapper-41 input[type="checkbox"] {
+.checkbox-wrapper-41 input[type="checkbox"] {
     -webkit-appearance: none;
     width: var(--size);
     height: calc(var(--size) / 2);
     background-color: #fff;
     border: 3px solid #222;
     border-radius: 30px 100px 100px 100px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    outline: none;  
-    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    outline: none;
+    cursor:pointer;
     position: relative;
     transition: all 0.5s;
-  }
+}
 
-  .checkbox-wrapper-41 input[type="checkbox"]::before {
+.checkbox-wrapper-41 input[type="checkbox"]::before {
     content: "";
     position: absolute;
     width: calc(var(--size) / 2);
@@ -220,16 +219,16 @@ main {
     background-color: #fde881;
     box-sizing: border-box;
     transition: all 0.5s;
-  }
+}
 
-  .checkbox-wrapper-41 input[type="checkbox"]:checked {
+.checkbox-wrapper-41 input[type="checkbox"]:checked {
     background-color: #000000;
     border-radius: 100px 100px 30px 100px;
     border: 1px solid white;
-  }
+}
 
-  .checkbox-wrapper-41 input[type="checkbox"]:checked::before {
+.checkbox-wrapper-41 input[type="checkbox"]:checked::before {
     left: 50%;
     background-color: #fff;
     border-radius: 100px 100px 30px 100px;
-  }
+}
