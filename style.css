@@ -31,7 +31,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 150px;
-    padding-right: 53px;
+    padding-right: 15px;
 
 }
 
@@ -190,7 +190,7 @@ main {
 /* Toggle button Starts*/
 
   .checkbox-wrapper-41 {
-    --size: 100px;
+    --size: 60px;
   }
 
   .checkbox-wrapper-41 input[type="checkbox"] {
