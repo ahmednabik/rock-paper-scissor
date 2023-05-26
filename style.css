@@ -64,7 +64,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 800px;
     justify-content: center;
     text-align: center;
     text-transform: uppercase;
@@ -92,6 +91,12 @@ main {
     box-shadow: 0 8px 60px 0 rgba(103, 151, 255, .11), 0 12px 90px 0 rgba(103, 151, 255, .11);
 }
 
+@media screen and (max-width: 600px) {
+    main {
+        margin: 5px 30px;
+    }
+}
+
 .rules {
     display: none;
 }
@@ -110,6 +115,9 @@ main {
 .game {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0px;
 }
 
 .record {
@@ -118,9 +126,17 @@ main {
     align-items: center;
 }
 
+.history-title{
+text-align: center;
+margin-top: 10px;
+}
+
 .history {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0px;
 }
 
 .history .card {
@@ -157,6 +173,7 @@ main {
     touch-action: manipulation;
     width: 100%;
     will-change: transform;
+    margin: 20px 0px;
 }
 
 .button-28:disabled {
