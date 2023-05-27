@@ -16,12 +16,9 @@
     <header>
         <div class="logo"><img src="img/logo.png"></div>
         <div class="profile-mode">
-
-
-
             <div class="switch checkbox-wrapper-41">
                 <input id="switch" type="checkbox">
-              </div>
+            </div>
         </div>
 
     </header>
@@ -29,8 +26,9 @@
     <main class="toggle">
         <div class="introduction toggle">
             <h1>Ultimate Rock Paper Scissor Championship</h1>
-            <p>Here you will be tested againts our best of the best computer to prove how much luck you have running in
-                your blood. If you win, you will be crowned as the Ultimate RPS Champion.</p>
+            <p class="tagline"><span>Here you will be tested againts our best of the best computer to prove how much
+                    luck you have running in
+                    your blood. If you win, you will be crowned as the Ultimate RPS Champion.</span></p>
         </div>
         <div class="rules">
             <h2>Rules of the Game</h2>
@@ -55,24 +53,26 @@
 
         </div>
         <div class="game toggle">
-            <div class="card toggle"><img class="img-toggle" src="img/rock.png"></div>
-            <div class="card toggle"><img class="img-toggle" src="img/paper.png"></div>
-            <div class="card toggle"><img  class="img-toggle" src="img/scissor.png"></div>
+            <div data-value="rock" class="card toggle"><img class="img-toggle" src="img/rock.png"></div>
+            <div data-value="paper" class="card toggle"><img class="img-toggle" src="img/paper.png"></div>
+            <div data-value="scissor" class="card toggle"><img class="img-toggle" src="img/scissor.png"></div>
         </div>
         <div class="record toggle">
-            <div class="history-title"><h2>Current Game Score</h2></div>
+            <div class="history-title">
+                <h2>Current Game Score</h2>
+            </div>
             <div class="history">
-                <div class="card toggle"></div>
-                <div class="card toggle"></div>
-                <div class="card toggle"></div>
-                <div class="card toggle"></div>
-                <div class="card toggle"></div>
+                <div class=" history-card card toggle">W</div>
+                <div class=" history-card card toggle">L</div>
+                <div class=" history-card card toggle">W</div>
+                <div class=" history-card card toggle">L</div>
+                <div class=" history-card card toggle">W</div>
             </div>
         </div>
         <div class="score"></div>
-        <div><button class="button-28 toggle">Reset the game</button></div>
+        <div><button id="button-28" class="button-28 toggle">Reset the game</button></div>
     </main>
-    <footer>crated by: Ahmed N. Khan</footer>
+    <footer>crated by: ahmed n khan</footer>
 
 </body>
 

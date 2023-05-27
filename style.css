@@ -69,6 +69,9 @@ header {
     text-transform: uppercase;
 
 }
+.tagline {
+    margin: 5px 80px;
+}
 
 footer {
     background-color: inherit;
@@ -108,8 +111,22 @@ main {
     border: 1px solid;
     border-radius: 5px;
     padding: 5px 5px;
-    box-shadow: 0 2px 8px 0 rgba(103, 151, 255, .09), 0 4px 32px 0 rgba(103, 151, 255, .09);
     box-shadow: rgba(77, 76, 76, 0.4) 5px 5px, rgba(77, 76, 76, 0.3) 10px 10px, rgba(77, 76, 76, 0.2) 15px 15px, rgba(77, 76, 76, 0.1) 20px 20px, rgba(77, 76, 76, 0.05) 25px 25px;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    transition: ease-out;
+    transition-duration: 5000;
+    cursor: pointer;
+    
+}
+
+.card:active {
+    transform: translateY(0px);
+    transition: ease-out;
+    transition-duration: 500;
+    cursor: pointer;
 }
 
 .game {
@@ -145,6 +162,11 @@ margin-top: 10px;
     border: 1px solid;
     border-radius: 5px;
     padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:xx-large;
+    font-weight: 500;
     box-shadow: 0 2px 8px 0 rgba(103, 151, 255, .09), 0 4px 32px 0 rgba(103, 151, 255, .09);
 }
 
@@ -211,6 +233,7 @@ margin-top: 10px;
 
 .checkbox-wrapper-41 input[type="checkbox"] {
     -webkit-appearance: none;
+    appearance: none;
     width: var(--size);
     height: calc(var(--size) / 2);
     background-color: #fff;
