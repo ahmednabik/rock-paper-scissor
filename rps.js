@@ -32,6 +32,9 @@ function calculateResult(firstPlayer, currentTurnNumber) {
     if ((firstPlayer == "rock" && secondPlayer == "scissor") || (firstPlayer == "scissor" && secondPlayer == "paper") || (firstPlayer == "paper" && secondPlayer == "rock")) {
         return "W";
     }
+    else if (firstPlayer == secondPlayer){
+        return "D"
+    }
     else {
         return "L";
     }
@@ -44,6 +47,7 @@ function populateResult(result) {
     }
 }
 function clearResults() {
+    document.getElementById("game-result").innerHTML = " "; //reset the result annoucement section
     let historyCards = document.querySelectorAll('.history-card');
     historyCards.forEach(card => {
         card.innerHTML = " ";
@@ -76,7 +80,8 @@ function toggleDayNight() {
     }
 }
 function gameOver() {
-    alert("game over");
-    clearResults();
+    let resultAnnouncement = document.getElementById("game-result");
+    resultAnnouncement.innerHTML = "You Lose"
+    //clearResults();
 
 }
